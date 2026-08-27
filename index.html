@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Kamal — Full-Stack Developer</title>
+  <meta name="description" content="Muhammad Kamal — Full-Stack Developer building cross-platform mobile, web & cloud apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-name" id="preloaderName">MUHAMMAD KAMAL</div>
+      <div class="preloader-bar"><span id="preloaderFill"></span></div>
+      <div class="preloader-count"><span id="preloaderPct">0</span>%</div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Grain + scroll progress -->
+  <div class="grain"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" data-cursor="hover">MK<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#work" data-cursor="hover">Work</a>
+      <a href="#about" data-cursor="hover">About</a>
+      <a href="#stack" data-cursor="hover">Stack</a>
+      <a href="#contact" data-cursor="hover">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="hero-glow glow-a"></div>
+    <div class="hero-glow glow-b"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow reveal" data-delay="0">
+          <span class="ping"></span> Full-Stack Developer · Open to Remote
+        </p>
+
+        <h1 class="hero-title">
+          <span class="line reveal-mask"><span>BUILDING</span></span>
+          <span class="line reveal-mask"><span>THINGS FOR</span></span>
+          <span class="line reveal-mask accent"><span id="rotator">MOBILE</span></span>
+        </h1>
+
+        <p class="lede reveal" data-delay="200">
+          I ship production cross-platform apps in <b>Flutter</b> &amp; <b>React Native</b>,
+          web frontends in <b>React</b>, backed by serverless cloud infrastructure.
+        </p>
+
+        <div class="hero-actions reveal" data-delay="350">
+          <a href="#work" class="glass glass--primary magnetic" data-cursor="hover">
+            <span>View my work</span>
+          </a>
+          <a href="#contact" class="glass glass--ghost magnetic" data-cursor="hover">
+            <span>Let's build something</span>
+          </a>
+        </div>
+
+        <div class="hero-socials reveal" data-delay="500">
+          <a href="https://github.com/KAMAL-7861" target="_blank" rel="noopener" data-cursor="hover">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhammad-kamal-7630092b9" target="_blank" rel="noopener" data-cursor="hover">LinkedIn</a>
+          <a href="https://www.upwork.com/freelancers/~01402bb14c18343487" target="_blank" rel="noopener" data-cursor="hover">Upwork</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap reveal" data-delay="250">
+        <div class="hero-photo" id="heroPhoto">
+          <img src="assets/kamal.jpg" alt="Muhammad Kamal" />
+          <div class="photo-ring"></div>
+        </div>
+        <div class="floating-badge badge-1">Flutter</div>
+        <div class="floating-badge badge-2">React Native</div>
+        <div class="floating-badge badge-3">AWS</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint reveal" data-delay="700">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Flutter</span><i>✦</i><span>React Native</span><i>✦</i><span>React</span><i>✦</i>
+      <span>FastAPI</span><i>✦</i><span>AWS</span><i>✦</i><span>Firebase</span><i>✦</i>
+      <span>Terraform</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Clean Architecture</span><i>✦</i>
+      <span>Flutter</span><i>✦</i><span>React Native</span><i>✦</i><span>React</span><i>✦</i>
+      <span>FastAPI</span><i>✦</i><span>AWS</span><i>✦</i><span>Firebase</span><i>✦</i>
+      <span>Terraform</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Clean Architecture</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- About / Stats -->
+  <section id="about" class="section about">
+    <div class="section-head reveal">
+      <span class="index">01</span>
+      <h2>About</h2>
+    </div>
+    <p class="about-lede reveal" data-delay="100">
+      Full-stack developer focused on cross-platform mobile, web and cloud.
+      I own features end-to-end — from UI and state management to backend APIs,
+      infrastructure as code and CI/CD.
+    </p>
+    <div class="stats">
+      <div class="stat reveal" data-delay="0">
+        <div class="stat-num" data-count="3" data-suffix="+">0</div>
+        <div class="stat-label">Years experience</div>
+      </div>
+      <div class="stat reveal" data-delay="120">
+        <div class="stat-num" data-count="10" data-suffix="+">0</div>
+        <div class="stat-label">Apps shipped</div>
+      </div>
+      <div class="stat reveal" data-delay="240">
+        <div class="stat-num" data-count="5" data-suffix="">0</div>
+        <div class="stat-label">Core technologies</div>
+      </div>
+      <div class="stat reveal" data-delay="360">
+        <div class="stat-num" data-count="100" data-suffix="%">0</div>
+        <div class="stat-label">Remote ready</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section">
+    <div class="section-head reveal">
+      <span class="index">02</span>
+      <h2>Selected work</h2>
+    </div>
+
+    <div class="work-grid">
+      <article class="card tilt reveal" data-cursor="hover">
+        <span class="tag">React Native · AWS</span>
+        <h3>Calendar Sync</h3>
+        <p>Cross-platform Google Calendar app with a companion React web product, on a serverless AWS backend (Lambda, DynamoDB, API Gateway, Cognito).</p>
+        <span class="card-index">/01</span>
+      </article>
+
+      <article class="card tilt reveal" data-delay="100" data-cursor="hover">
+        <span class="tag">React Native</span>
+        <h3>Resonance</h3>
+        <p>A mobile game app designed, built and shipped end-to-end — from UI through release.</p>
+        <span class="card-index">/02</span>
+      </article>
+
+      <article class="card tilt reveal" data-delay="200" data-cursor="hover">
+        <span class="tag">Flutter · Firebase</span>
+        <h3>E-Learning App</h3>
+        <p>Clean Architecture + BLoC e-learning platform with Firebase auth, data &amp; storage, shipped through a CI/CD pipeline.</p>
+        <span class="card-index">/03</span>
+      </article>
+
+      <article class="card tilt reveal" data-delay="300" data-cursor="hover">
+        <span class="tag">Flutter</span>
+        <h3>Market Analysis</h3>
+        <p>Stock/crypto analysis app with technical indicators (RSI, MACD, Bollinger Bands, ADX) for trade-signal visualization.</p>
+        <span class="card-index">/04</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Stack -->
+  <section id="stack" class="section">
+    <div class="section-head reveal">
+      <span class="index">03</span>
+      <h2>Tech stack</h2>
+    </div>
+
+    <div class="stack-groups">
+      <div class="stack-col reveal" data-delay="0">
+        <h4>Languages &amp; Frameworks</h4>
+        <ul>
+          <li>Dart</li><li>Python</li><li>Flutter</li>
+          <li>React Native</li><li>React</li><li>FastAPI</li>
+        </ul>
+      </div>
+      <div class="stack-col reveal" data-delay="120">
+        <h4>Architecture &amp; State</h4>
+        <ul>
+          <li>Clean Architecture</li><li>BLoC</li>
+          <li>Provider</li><li>MVVM</li><li>REST APIs</li>
+        </ul>
+      </div>
+      <div class="stack-col reveal" data-delay="240">
+        <h4>Cloud &amp; Data</h4>
+        <ul>
+          <li>AWS</li><li>Firebase</li><li>Terraform</li>
+          <li>PostgreSQL</li><li>DynamoDB</li>
+        </ul>
+      </div>
+      <div class="stack-col reveal" data-delay="360">
+        <h4>DevOps &amp; Testing</h4>
+        <ul>
+          <li>GitHub Actions</li><li>Docker</li>
+          <li>Jest</li><li>Unit &amp; Integration</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="section-head reveal">
+      <span class="index">04</span>
+      <h2>Let's build<br />something great</h2>
+    </div>
+    <p class="contact-lede reveal" data-delay="100">Open to remote work. Reach me here:</p>
+    <div class="contact-actions reveal" data-delay="200">
+      <a href="mailto:m.kam2812005@gmail.com" class="glass glass--primary magnetic" data-cursor="hover"><span>m.kam2812005@gmail.com</span></a>
+    </div>
+    <div class="contact-socials reveal" data-delay="300">
+      <a href="https://github.com/KAMAL-7861" target="_blank" rel="noopener" class="social-link" data-cursor="hover">
+        <span>GitHub</span><em>KAMAL-7861</em>
+      </a>
+      <a href="https://www.linkedin.com/in/muhammad-kamal-7630092b9" target="_blank" rel="noopener" class="social-link" data-cursor="hover">
+        <span>LinkedIn</span><em>muhammad-kamal</em>
+      </a>
+      <a href="https://www.upwork.com/freelancers/~01402bb14c18343487" target="_blank" rel="noopener" class="social-link" data-cursor="hover">
+        <span>Upwork</span><em>Hire me</em>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© Muhammad Kamal</span>
+    <span>Bhakkar, Punjab, Pakistan · Open to Remote</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
