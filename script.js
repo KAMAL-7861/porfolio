@@ -189,6 +189,51 @@ function startReveals() {
   });
 })();
 
+/* ---------- Project modal ---------- */
+(function projectModal() {
+  const triggers = document.querySelectorAll('[data-modal]');
+  if (!triggers.length) return;
+  let lastFocused = null;
+
+  function open(id) {
+    const modal = document.getElementById('modal-' + id);
+    if (!modal) return;
+    lastFocused = document.activeElement;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    const closeBtn = modal.querySelector('.modal-close');
+    if (closeBtn) closeBtn.focus();
+  }
+  function close(modal) {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    if (lastFocused) lastFocused.focus();
+  }
+
+  triggers.forEach((t) => {
+    const id = t.dataset.modal;
+    t.addEventListener('click', () => open(id));
+    t.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(id); }
+    });
+  });
+
+  document.querySelectorAll('.modal').forEach((modal) => {
+    modal.querySelectorAll('[data-close]').forEach((el) => {
+      el.addEventListener('click', () => close(modal));
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const openModal = document.querySelector('.modal.open');
+      if (openModal) close(openModal);
+    }
+  });
+})();
+
 /* ---------- Hero photo parallax ---------- */
 (function heroParallax() {
   if (reduceMotion || window.matchMedia('(max-width: 900px)').matches) return;

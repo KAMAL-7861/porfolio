@@ -145,6 +145,19 @@
     </div>
 
     <div class="work-grid">
+      <article class="card card--feature reveal" data-modal="kidzo" data-cursor="hover" role="button" tabindex="0" aria-label="Open Kidzo case study">
+        <div class="feature-text">
+          <span class="tag">Flutter · Kids' Learning App</span>
+          <h3>Kidzo</h3>
+          <p>Kidzo is a fun learning app for kids, built in Flutter — teaching the <b>alphabet</b> and <b>numbers</b> through playful, gamified lessons, with <b>illustrated stories</b> and simple word games that keep little learners hooked while they learn.</p>
+          <span class="feature-cta">View screenshots →</span>
+        </div>
+        <div class="feature-shots">
+          <img src="assets/kidzo-math.png" alt="Kidzo home screen" />
+          <img src="assets/kidzo-spell.png" alt="Kidzo spelling game" />
+        </div>
+      </article>
+
       <article class="card tilt reveal" data-cursor="hover">
         <span class="tag">React Native · AWS</span>
         <h3>Calendar Sync</h3>
@@ -160,17 +173,10 @@
       </article>
 
       <article class="card tilt reveal" data-delay="200" data-cursor="hover">
-        <span class="tag">Flutter · Firebase</span>
-        <h3>E-Learning App</h3>
-        <p>Clean Architecture + BLoC e-learning platform with Firebase auth, data &amp; storage, shipped through a CI/CD pipeline.</p>
-        <span class="card-index">/03</span>
-      </article>
-
-      <article class="card tilt reveal" data-delay="300" data-cursor="hover">
         <span class="tag">Flutter</span>
         <h3>Market Analysis</h3>
         <p>Stock/crypto analysis app with technical indicators (RSI, MACD, Bollinger Bands, ADX) for trade-signal visualization.</p>
-        <span class="card-index">/04</span>
+        <span class="card-index">/03</span>
       </article>
     </div>
   </section>
@@ -241,6 +247,37 @@
     <span>© Muhammad Kamal</span>
     <span>Bhakkar, Punjab, Pakistan · Open to Remote</span>
   </footer>
+
+  <!-- Project modal -->
+  <div class="modal" id="modal-kidzo" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="kidzoTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close aria-label="Close" data-cursor="hover">×</button>
+      <img class="modal-banner" src="assets/kidzo-banner.png" alt="Kidzo — Learn, Play, Grow" />
+      <div class="modal-head">
+        <span class="tag">Flutter · Kids' Learning App</span>
+        <h3 id="kidzoTitle">Kidzo</h3>
+        <p class="modal-lede">
+          Kidzo is a fun learning app for young kids, built in Flutter. It teaches the
+          <b>alphabet</b> and <b>numbers</b> through colorful, gamified lessons split into playful
+          <b>“worlds”</b> — plus <b>illustrated, narrated stories</b> and simple word games that
+          keep little learners engaged. Kids earn points, level up a friendly mascot and collect
+          rewards, all wrapped in a soft, playful UI with big, tappable controls made for little hands.
+        </p>
+        <ul class="modal-feats">
+          <li>Learn the alphabet &amp; numbers</li>
+          <li>Fun gamified lessons &amp; rewards</li>
+          <li>Simple spelling word games</li>
+          <li>Illustrated story time</li>
+        </ul>
+      </div>
+      <div class="modal-gallery modal-gallery--3">
+        <figure><img src="assets/kidzo-math.png" alt="Kidzo — learn math the fun way" /><figcaption>Learn the fun way</figcaption></figure>
+        <figure><img src="assets/kidzo-spell.png" alt="Kidzo — spell words with adorable animals" /><figcaption>Spell it!</figcaption></figure>
+        <figure><img src="assets/kidzo-story.png" alt="Kidzo — listen to beautiful stories" /><figcaption>Story time</figcaption></figure>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
