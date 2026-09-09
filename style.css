@@ -413,6 +413,7 @@ a { color: inherit; }
 }
 .modal-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .modal-gallery--3 { grid-template-columns: repeat(3, 1fr); max-width: 720px; margin: 0 auto; }
+.modal-gallery--5 { grid-template-columns: repeat(5, 1fr); }
 .modal-gallery figure { margin: 0; }
 .modal-gallery img {
   width: 100%; border-radius: 14px; border: 1px solid var(--line);
